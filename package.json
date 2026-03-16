@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
+    "dev:frontend": "vite",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\"",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +28,7 @@
   "author": "Coders of the Apocalypse",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.13.6",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -32,10 +37,16 @@
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.11.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.9",
+    "vite": "^8.0.0"
   },
   "type": "commonjs",
   "bugs": {
