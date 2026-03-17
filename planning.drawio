@@ -1,100 +1,245 @@
 <mxfile host="65bd71144e">
     <diagram id="_s3jRCY8IlPaTvBFReEo" name="Page-1">
-        <mxGraphModel dx="865" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Matchday Market&lt;div&gt;MVP - a fan can register, browse, list and express intent to purchase, all within a clean sports themed UI&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="Matchday Market/Fandrop/KitBid&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;MVP - a fan can register, browse, list and express intent to purchase, all within a clean sports themed UI&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="230" y="10" width="350" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="1 - Login/Register&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;Register - new user creates account with name, email, password, fav team?&lt;/div&gt;&lt;div&gt;Login - logs in with email and password&lt;/div&gt;&lt;div&gt;Logout - session cleared&lt;/div&gt;&lt;div&gt;Profile page - shows username and date joined&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="100" width="250" height="140" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-13" value="The Problem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="170" width="100" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="2 - Search Listings&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Search bar - text search&amp;nbsp;&lt;/span&gt;&lt;div&gt;Browse all - list of all listings, title, price, image, condition, team ?&lt;/div&gt;&lt;div&gt;Filter: Sport - maybe dropdown menu, football, basketball, rugby&lt;/div&gt;&lt;div&gt;Filter: Team - dropdown with listing data&lt;/div&gt;&lt;div&gt;Filter Category - shirt&lt;/div&gt;&lt;div&gt;Sort: - Price whether high-low low-high&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="430" y="100" width="270" height="170" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-15" value="Sport fans are passionate, loyal and consistent buyers yet the market fails them. There is no single trusted destination specifically for sport fans to buy sell and discover gear" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="140" width="250" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="3 - View Listing&lt;div&gt;Detail page - description, images, title, price&lt;/div&gt;&lt;div&gt;Buy button - users can add product to cart&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="75" y="270" width="260" height="140" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-17" value="&lt;b&gt;Trust and authenticity&lt;/b&gt; - counterfit shirts&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Disunited market&lt;/b&gt; - fans use ebay, facebook marketplace, reddit, club websites. there is no single trusted destination built for sport fans&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;No community&lt;/b&gt; - selling a match worn kit carries a story but some platforms strip that out, it just becomes a product, not a piece of sports history???&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="140" width="290" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="4 - Checkout&amp;nbsp;&lt;div&gt;Add to cart - buyer adds item to cart, count shown in navbar&lt;/div&gt;&lt;div&gt;Cart page - List of items, amount of items and total price&lt;/div&gt;&lt;div&gt;Checkout form - order summary&lt;/div&gt;&lt;div&gt;Order confirmation - confirms purchase request, seller notified&lt;/div&gt;&lt;div&gt;Sold - listing is marked as sold and removed from browser&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="400" y="280" width="290" height="150" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-18" value="The solution" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="370" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Buyer stories&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="450" width="110" height="50" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-19" value="[website name] is a sports fan marketplace where fans can purchase sport merchandise, tickets, and list items filtered by team, sport etc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="325" width="250" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="User story&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;1 - As a fan, I want to browse orders so i can find items for sale&lt;/div&gt;&lt;/div&gt;&lt;div&gt;2 - as a fan i want to search by team name so i can get relevant items quickly&lt;/div&gt;&lt;div&gt;3- as a buyer i want to view a listing page so i can see details and photos before buying&lt;/div&gt;&lt;div&gt;4 - as a buyer i want to add an item to my cart so i can review booking&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="4" y="535" width="366" height="195" as="geometry"/>
+                <mxCell id="QBmttzjRbXvEFquqEaty-20" value="&lt;b&gt;fan filtering&lt;/b&gt; - browse by sport, team,&amp;nbsp;&lt;div&gt;&lt;b&gt;community trust system&lt;/b&gt; - buyer ratings?&lt;/div&gt;&lt;div&gt;&lt;b&gt;clean modern UI&lt;/b&gt; - a shopping experience that feels modern&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="320" width="250" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Acceptance Criteria&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - Listings visible on homepage without login&lt;/div&gt;&lt;div&gt;2 - the search return only matching team listings&lt;/div&gt;&lt;div&gt;3 - clicking order/list opens detail page with all fields&lt;/div&gt;&lt;div&gt;4 - updates cart with item&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="440" y="535" width="320" height="185" as="geometry"/>
+                <mxCell id="udOeafpgu6XVYhNr2s3o-2" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="204.5" as="sourcePoint"/>
+                        <mxPoint x="180" y="204.5" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="11" value="Admin Story" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="310" y="760" width="120" height="60" as="geometry"/>
+                <mxCell id="udOeafpgu6XVYhNr2s3o-3" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="440" y="204.5" as="sourcePoint"/>
+                        <mxPoint x="500" y="204.5" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="User story&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;as a admin i want to see all registered users so i can monitor the platform&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="850" width="280" height="150" as="geometry"/>
+                <mxCell id="udOeafpgu6XVYhNr2s3o-4" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="394.5" as="sourcePoint"/>
+                        <mxPoint x="180" y="394.5" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="13" value="Acceptance Criteria&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - User/users list visible in admin panel&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="850" width="270" height="150" as="geometry"/>
+                <mxCell id="udOeafpgu6XVYhNr2s3o-5" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="440" y="389.5" as="sourcePoint"/>
+                        <mxPoint x="500" y="389.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="OyVoRZFd-9WuQyZNycFA-2" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="90" as="sourcePoint"/>
+                        <mxPoint x="380" y="140" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="d6zkHYhs7E5bBBJaSN6z" name="Page-2">
-        <mxGraphModel dx="865" dy="1668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-1" value="Wireframe" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="310" y="-1160" width="120" height="60" as="geometry"/>
+                <mxCell id="Hb051D1MtKHeKxV40aO9-1" value="1 - Login/Register&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;Register&lt;/b&gt; - new user creates account with name, email, password, fav team?&lt;/div&gt;&lt;div&gt;&lt;b&gt;Login&lt;/b&gt; - logs in with email and password&lt;/div&gt;&lt;div&gt;Logout - session cleared&lt;/div&gt;&lt;div&gt;&lt;b&gt;Profile page&lt;/b&gt; - shows username and date joined&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="10" width="290" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-3" value="Navbar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="-1078.75" width="90" height="40" as="geometry"/>
+                <mxCell id="nG9ExTN6iJS7m8yLQxU0-1" value="2 - Search Listings&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;b&gt;Search bar&lt;/b&gt; - text search&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;b&gt;Browse all&lt;/b&gt; - list of all listings, title, price, image, condition, team ?&lt;/div&gt;&lt;div&gt;&lt;b&gt;Filter: Sport&lt;/b&gt; - maybe dropdown menu, football, basketball, rugby&lt;/div&gt;&lt;div&gt;&lt;b&gt;Filter: Team&lt;/b&gt; - dropdown with listing data&lt;/div&gt;&lt;div&gt;Filter Category - shirt&lt;/div&gt;&lt;div&gt;&lt;b&gt;Sort:&lt;/b&gt; - Price whether high-low low-high&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="10" width="370" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-4" value="Logo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="500" y="-1080" width="90" height="45" as="geometry"/>
+                <mxCell id="sMWr7mb4GEJBnoJNbfAw-1" value="3 - View Listing&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;Detail page &lt;/b&gt;- description, images, title, price&lt;/div&gt;&lt;div&gt;&lt;b&gt;Buy button&lt;/b&gt; - users can add product to cart&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="200" width="260" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-5" value="Login/Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="600" y="-1087.5" width="100" height="60" as="geometry"/>
+                <mxCell id="AzYoWYx52eRNZk3OGMjv-1" value="4 - Checkout&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;Add to cart&lt;/b&gt; - buyer adds item to cart, count shown in navbar&lt;/div&gt;&lt;div&gt;&lt;b&gt;Cart page &lt;/b&gt;- List of items, amount of items and total price&lt;/div&gt;&lt;div&gt;Checkout form - order summary&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order confirmation &lt;/b&gt;- confirms purchase request, seller notified&lt;/div&gt;&lt;div&gt;&lt;b&gt;Sold&lt;/b&gt; - listing is marked as sold and removed from browser&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="187.5" width="355" height="165" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-6" value="Cart - icon" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="710" y="-1078.75" width="96" height="42.5" as="geometry"/>
+                <mxCell id="5W81xECZfQPzj0S7f3VQ-1" value="Buyer stories&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="390" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-8" value="Hero Banner" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="-1010" width="90" height="40" as="geometry"/>
+                <mxCell id="uOIHmRs4fpkiOk5Q32U6-1" value="User story&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;1 - As a fan, I want to browse orders so i can find items for sale&lt;/div&gt;&lt;/div&gt;&lt;div&gt;2 - as a fan i want to search by team name so i can get relevant items quickly&lt;/div&gt;&lt;div&gt;3- as a buyer i want to view a listing page so i can see details and photos before buying&lt;/div&gt;&lt;div&gt;4 - as a buyer i want to add an item to my cart so i can review booking&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="4" y="440" width="366" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-9" value="Marketplace for sport fans - built by fans for fan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="340" y="-1020" width="240" height="60" as="geometry"/>
+                <mxCell id="XrIiv57gFCgR9zzLgTiL-1" value="Acceptance Criteria&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - Listings visible on homepage without login&lt;/div&gt;&lt;div&gt;2 - the search return only matching team listings&lt;/div&gt;&lt;div&gt;3 - clicking order/list opens detail page with all fields&lt;/div&gt;&lt;div&gt;4 - updates cart with item&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="440" width="345" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-11" value="Filter bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="5" y="-930" width="100" height="40" as="geometry"/>
+                <mxCell id="vU7MVHHxAFoCc9CDujYi-1" value="Admin Story" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="680" width="105" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-12" value="Sport: dropdown menu, Team: [Input], Category [dropdown], Sort: [dropdown]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="-950" width="340" height="60" as="geometry"/>
+                <mxCell id="TEl7HmkR3c19E0vNvjoh-1" value="User story&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;as a admin i want to see all registered users so i can monitor the platform&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="740" width="280" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-13" value="Search bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="5" y="-860" width="115" height="40" as="geometry"/>
+                <mxCell id="HHund8jCoiqu8PqZiVQP-1" value="Acceptance Criteria&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - User/users list visible in admin panel&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="740" width="270" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-14" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="170" y="-910.5" as="sourcePoint"/>
-                        <mxPoint x="270" y="-910.5" as="targetPoint"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="yxwp86fU0-EO1JqAoErs" name="Page-3">
+        <mxGraphModel dx="865" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="gcq0U57Q1CdLkkRQihCn-1" value="Wireframe" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="20" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-1" value="Navbar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-2" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-3" value="Sell?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="354" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-4" value="Login/Register" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-5" value="Cart" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-6" value="Hero Banner" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-7" value="The marketplace for sport fans, built by fans for the fans" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="210" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-8" value="Filter bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-9" value="Sport: [dropdown] Team:[input] Category [dropdown] Sort [dropdown, whether low-high high-low?]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="300" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-10" value="Search bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-11" value="&amp;nbsp;with search button" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="390" width="460" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-12" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="420" width="150" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-13" value="Main content/listings" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-14" value="2 columns? 4 images?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="480" width="430" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-15" value="Pagination" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-16" value="&amp;lt; 1,2,3,4 &amp;gt; user can click back and forth pages" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="234" y="570" width="296" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-17" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DE6Hq09DNA7gpd6pVF9B-18" value="website name, copyright 2026 | About | Contact | Terms" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="234" y="660" width="356" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-5" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="139.5" as="sourcePoint"/>
+                        <mxPoint x="200" y="139.5" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-16" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="210" y="-990" as="sourcePoint"/>
-                        <mxPoint x="310" y="-990" as="targetPoint"/>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-6" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="239.5" as="sourcePoint"/>
+                        <mxPoint x="200" y="239.5" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-17" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="-1060" as="sourcePoint"/>
-                        <mxPoint x="300" y="-1060" as="targetPoint"/>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-7" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="329.5" as="sourcePoint"/>
+                        <mxPoint x="200" y="329.5" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="0YCgdJ6s69yL-Ay5gxP3-18" value="with search button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="290" y="-880" width="290" height="60" as="geometry"/>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-8" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="420" as="sourcePoint"/>
+                        <mxPoint x="200" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-9" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="509.5" as="sourcePoint"/>
+                        <mxPoint x="210" y="509.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-10" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="689.5" as="sourcePoint"/>
+                        <mxPoint x="210" y="689.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="L40NXufFpAyfMfFsnnb0-11" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="599.5" as="sourcePoint"/>
+                        <mxPoint x="210" y="599.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="qN7dIU27p5z6tgkWMT32" name="Page-4">
+        <mxGraphModel dx="865" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-1" value="Listing page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="20" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-2" value="LEFT: image gallery" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="110" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-3" value="Main image - Large 2003 (XL)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="190" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-4" value="Right: listing information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="110" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-5" value="Title: Arsenal Home shirt&lt;div&gt;Price: £50.00&lt;/div&gt;&lt;div&gt;Condition: Good&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="190" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-6" value="[Description]? .. Long text description of the item" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="300" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-7" value="[Seller] Sold by: @username" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="295" y="300" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-8" value="Report listing feature?&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="300" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-9" value="Register/Login" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="465" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-10" value="Logo + &quot;create your KitBid account&quot;&lt;div&gt;Fullname:&amp;nbsp;&lt;/div&gt;&lt;div&gt;Email:&amp;nbsp;&lt;/div&gt;&lt;div&gt;Password: (show/hide toggle?)&lt;/div&gt;&lt;div&gt;Confrim password&lt;/div&gt;&lt;div&gt;Fav team: (optional)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="420" width="300" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="qXKBFMIXDgwLaojbatQo-11" value="[create account button]&lt;div&gt;Already have an account? [login]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="430" width="220" height="110" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
