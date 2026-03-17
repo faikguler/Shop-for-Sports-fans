@@ -24,15 +24,7 @@ Newsletter.init(
       allowNull: false,
       defaultValue: true,
     },
-    subscribedAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    unsubscribedAt: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
+
   },
   {
     sequelize,
