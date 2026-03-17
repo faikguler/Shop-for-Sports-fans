@@ -64,49 +64,6 @@ const Contact = () => {
       </div>
     </section>
 
-    {/*Footer same index*/}
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h5 class="fw-bold mb-3"><i class="bi bi-trophy-fill text-warning me-2"></i>SportShop</h5>
-            <p>The meeting point for sports fans. Highest quality products, best prices.</p>
-            <div class="d-flex gap-3">
-              <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <h6 class="fw-bold mb-3">Company</h6>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Stores</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h6 class="fw-bold mb-3">Help</h6>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQs</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Shipping & Delivery</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Returns</a></li>
-              <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h6 class="fw-bold mb-3">Newsletter</h6>
-            <p>Be the first to know about campaigns.</p>
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Your email address"/>
-              <button class="btn btn-warning" type="button">Subscribe</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </footer>
     </>
   )
 };
