@@ -24,6 +24,11 @@ sequelize.authenticate()
 // Models
 const User = require('./models/User'); // User Model
 
+// Routes
+const userRoutes = require('./routes/user'); // user.js 
+app.use('/api/users', userRoutes); // /api/users
+
+
 sequelize.sync({ alter: true }) 
   .then(() => console.log('Database synced'))
   .catch(err => console.error('Sync error:', err));
