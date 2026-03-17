@@ -15,28 +15,16 @@ Newsletter.init(
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-    //   subscription per email
+      validate: {
+        isEmail: true,
+      },
     },
-    validate: {
-      isEmail: true,
-    },
-  },
-  {
     isActive: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    // true = subscribed, false = unsubscribed
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true,
     },
-    subscribedAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
-    },
-    unsubscribedAt: {
-        type: DataTypes.DATE,
-        allowNull: true,
-    },
+
   },
   {
     sequelize,
@@ -45,7 +33,6 @@ Newsletter.init(
     underscored: true,
     modelName: 'newsletter',
   }
-
 );
 
 module.exports = Newsletter;
