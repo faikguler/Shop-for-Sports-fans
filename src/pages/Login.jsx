@@ -15,11 +15,7 @@ const Login = ({ setUser }) => {
       const { token, user } = res.data; //  { token, user }
       localStorage.setItem('token', token);
       setUser(user);
-      if (user.role === 'admin') {
-        navigate('/admin/dashboard');
-      } else {
-        navigate('/');
-      }
+      navigate('/');
     } catch (err) {
       setError('Invalid email or password');
     }
@@ -50,7 +46,7 @@ const Login = ({ setUser }) => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">Login</button>
+        <button type="submit" className="btn btn-warning w-100">Login</button>
       </form>
     </div>
   );
