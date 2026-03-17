@@ -1,6 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ user, setUser }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setUser(null);
+    navigate('/');
+  };    
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
       <div className="container">
@@ -12,22 +20,42 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/products">Products</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+            <li className="nav-item">
+              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/">Home</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/products">Products</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/about">About</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/contact">Contact</NavLink>
+            </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search products..." />
-            <button className="btn btn-outline-light" type="submit">
-              <i className="bi bi-search"></i>
-            </button>
-          </form>
+
+          {user ? (
+            <>
+              <span className="text-white me-2">Hi, {user.name}</span>
+              <Link to="/profile" className="btn btn-secondary ms-2">
+                <i className="bi bi-person-circle"></i> Profile
+              </Link>
+              {user.role === 'admin' && (
+                <Link to="/admin/dashboard" className="btn btn-secondary ms-2">
+                  <i className="bi bi-shield-lock-fill"></i> Admin Panel
+                </Link>
+              )}
+              <button className="btn btn-outline-light ms-2" onClick={handleLogout}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link to="/login" className="btn btn-warning ms-2">
+              <i className="bi bi-person-circle"></i> Login
+            </Link>
+          )}
           <Link to="/cart" className="btn btn-outline-light ms-2">
             <i className="bi bi-cart3"></i> <span className="badge bg-warning text-dark">0</span>
-          </Link>
-          <Link to="/login" className="btn btn-warning ms-2">
-            <i className="bi bi-person-circle"></i> Login
           </Link>
         </div>
       </div>
