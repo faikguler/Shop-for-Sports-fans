@@ -1,40 +1,7 @@
 const Product = () => {
   return (
     <>
-        {/* Navbar - sticky top */}
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-3" href="#">
-        <i class="bi bi-trophy-fill text-warning me-2"></i>SportShop
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search"/>
-          <button class="btn btn-outline-light" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-        <a href="#" class="btn btn-outline-light ms-2">
-          <i class="bi bi-cart3"></i> <span class="badge bg-warning text-dark">3</span>
-        </a>
-        <a href="#" class="btn btn-warning ms-2">
-          <i class="bi bi-person-circle"></i> Login
-        </a>
-      </div>
-    </div>
-  </nav>
-
-
-
+ 
   <section class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-5 fw-bold border-bottom border-warning border-3 pb-2 d-inline-block mx-auto">Categories</h2>
