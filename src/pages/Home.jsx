@@ -40,25 +40,21 @@ const Home = () => {
           <div className="row g-4 text-center">
             <div className="col-md-3 col-6">
               <div className="card border-0 bg-white shadow-sm p-3">
-                <i className="bi bi-bicycle display-1 text-warning"></i>
                 <h5 className="mt-3">Cycling</h5>
               </div>
             </div>
             <div className="col-md-3 col-6">
               <div className="card border-0 bg-white shadow-sm p-3">
-                <i className="bi bi-basketball display-1 text-warning"></i>
                 <h5 className="mt-3">Basketball</h5>
               </div>
             </div>
             <div className="col-md-3 col-6">
               <div className="card border-0 bg-white shadow-sm p-3">
-                <i className="bi bi-football display-1 text-warning"></i>
                 <h5 className="mt-3">Football</h5>
               </div>
             </div>
             <div className="col-md-3 col-6">
               <div className="card border-0 bg-white shadow-sm p-3">
-                <i className="bi bi-heart-pulse-fill display-1 text-warning"></i>
                 <h5 className="mt-3">Fitness</h5>
               </div>
             </div>

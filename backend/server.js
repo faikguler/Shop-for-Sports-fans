@@ -26,7 +26,10 @@ const User = require('./models/User'); // User Model
 
 // Routes
 const userRoutes = require('./routes/user'); // user.js 
-app.use('/api/users', userRoutes); // /api/users
+app.use('/api/users', userRoutes);
+
+const categoryRoutes = require('./routes/category'); //category.js
+app.use('/api/categories', categoryRoutes);
 
 
 sequelize.sync({ alter: true }) 
