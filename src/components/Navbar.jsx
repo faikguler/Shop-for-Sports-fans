@@ -50,9 +50,12 @@ const Navbar = ({ user, setUser }) => {
               </button>
             </>
           ) : (
+            <>
+            <Link to="/register" className="btn btn-warning ms-2"><i className="bi bi-person-circle"></i> Register</Link>
             <Link to="/login" className="btn btn-warning ms-2">
               <i className="bi bi-person-circle"></i> Login
             </Link>
+            </>
           )}
           <Link to="/cart" className="btn btn-outline-light ms-2">
             <i className="bi bi-cart3"></i> <span className="badge bg-warning text-dark">0</span>

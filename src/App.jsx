@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Register from './pages/Register';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 
@@ -78,6 +79,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/register" element={<Register setUser={setUser} />} />
                 <Route path="/login" element={<Login setUser={setUser} />} />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
