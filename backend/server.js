@@ -31,8 +31,11 @@ app.use('/api/users', userRoutes);
 const categoryRoutes = require('./routes/category'); //category.js
 app.use('/api/categories', categoryRoutes);
 
+const newsletterRoutes = require('./routes/newsletterRoutes'); // newsletterRoutes.js
+app.use('/api/newsletter', newsletterRoutes);
 
-sequelize.sync({ alter: true }) 
+
+sequelize.sync()   // ({ alter: true }) 
   .then(() => console.log('Database synced'))
   .catch(err => console.error('Sync error:', err));
 
