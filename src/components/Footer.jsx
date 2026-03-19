@@ -1,4 +1,36 @@
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
 const Footer = () => {
+  const [email,setEmail] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+
+try {
+
+    const response = await fetch ('http://localhost:5001/api/newsletter',{
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json'},
+    body: JSON.stringify({ email }),
+
+    });
+    if (response.ok) {
+      setStatus('You have successfully subscribed');
+      setEmail(''); // this clears the input when successfull
+    } else {
+      setStatus('Something went wrong, please try again?');
+    }
+  } catch (err) {
+     console.error(err);
+     setStatus('Database error. Please try again later');
+  }
+};
+
+
+
+
   return (
   <footer class="bg-dark text-white pt-5 pb-4">
     <div class="container">
@@ -16,9 +48,9 @@ const Footer = () => {
         <div class="col-md-2">
           <h6 class="fw-bold mb-3">Company</h6>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
-            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact</a></li>
-            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+            <Link className="nav-link" to="/about">About Us</Link>
+            <Link className="nav-link" to="/contact">Contact Us</Link>
+            <Link className="nav-link" to="/">Home</Link>
             <li class="mb-2"><a href="#" class="text-white text-decoration-none">Stores</a></li>
           </ul>
         </div>
@@ -34,10 +66,15 @@ const Footer = () => {
         <div class="col-md-4">
           <h6 class="fw-bold mb-3">Newsletter</h6>
           <p>Be the first to know about campaigns.</p>
+
+          <form onSubmit={handleSubscribe}>
           <div class="input-group">
-            <input type="email" class="form-control" placeholder="Your email address"/>
-            <button class="btn btn-warning" type="button">Subscribe</button>
+          <input type="email" class="form-control" placeholder="Your email address"
+          value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <button className="btn btn-warning" type="submit">Subscribe</button>
           </div>
+          </form>
+          {status && <p className="mt-2">{status}</p>}
         </div>
       </div>
       <hr class="border-secondary my-4"/>

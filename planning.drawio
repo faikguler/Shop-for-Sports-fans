@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="_s3jRCY8IlPaTvBFReEo" name="Page-1">
-        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="727" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Matchday Market/Fandrop/KitBid&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;MVP - a fan can register, browse, list and express intent to purchase, all within a clean sports themed UI&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="2" value="Matchday Market/Fandrop/KitBid&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;MVP - a fan can register, browse, list?? and express intent to purchase, all within a clean sports themed UI&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="230" y="10" width="350" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="QBmttzjRbXvEFquqEaty-13" value="The Problem" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -19,7 +19,7 @@
                 <mxCell id="QBmttzjRbXvEFquqEaty-18" value="The solution" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="370" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="QBmttzjRbXvEFquqEaty-19" value="[website name] is a sports fan marketplace where fans can purchase sport merchandise, tickets, and list items filtered by team, sport etc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="QBmttzjRbXvEFquqEaty-19" value="[website name] is a sports fan website where fans can purchase sport merchandise, tickets, and list?? items filtered by team, sport etc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="180" y="325" width="250" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="QBmttzjRbXvEFquqEaty-20" value="&lt;b&gt;fan filtering&lt;/b&gt; - browse by sport, team,&amp;nbsp;&lt;div&gt;&lt;b&gt;community trust system&lt;/b&gt; - buyer ratings?&lt;/div&gt;&lt;div&gt;&lt;b&gt;clean modern UI&lt;/b&gt; - a shopping experience that feels modern&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -59,7 +59,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="d6zkHYhs7E5bBBJaSN6z" name="Page-2">
-        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="727" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -97,7 +97,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxwp86fU0-EO1JqAoErs" name="Page-3">
-        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="727" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -204,7 +204,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="qN7dIU27p5z6tgkWMT32" name="Page-4">
-        <mxGraphModel dx="576" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="727" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
