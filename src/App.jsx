@@ -21,6 +21,7 @@ import AdminDashboard from './pages/admin/Dashboard';
 import AdminUsers from './pages/admin/Users';
 import AdminProducts from './pages/admin/Products';
 import AdminOrders from './pages/admin/Orders';
+import AdminCategories from './pages/admin/Categories'; // Yeni
 
 // Admin layout 
 const AdminLayout = ({ setUser }) => (
@@ -30,6 +31,7 @@ const AdminLayout = ({ setUser }) => (
       <Routes>
         <Route path="dashboard" element={<AdminDashboard />} />
         <Route path="users" element={<AdminUsers />} />
+        <Route path="categories" element={<AdminCategories />} />
         <Route path="products" element={<AdminProducts />} />
         <Route path="orders" element={<AdminOrders />} />
         <Route path="*" element={<Navigate to="dashboard" />} />
