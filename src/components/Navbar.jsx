@@ -1,7 +1,9 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 const Navbar = ({ user, setUser }) => {
   const navigate = useNavigate();
+  const { cartCount } = useCart();
 
   const handleLogout = () => {
     localStorage.removeItem('token');
@@ -57,8 +59,13 @@ const Navbar = ({ user, setUser }) => {
             </Link>
             </>
           )}
-          <Link to="/cart" className="btn btn-outline-light ms-2">
-            <i className="bi bi-cart3"></i> <span className="badge bg-warning text-dark">0</span>
+          <Link to="/cart" className="btn btn-outline-light ms-2 position-relative">
+            <i className="bi bi-cart3"></i>
+            {cartCount > 0 && (
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                {cartCount}
+              </span>
+            )}
           </Link>
         </div>
       </div>

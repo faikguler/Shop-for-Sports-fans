@@ -15,6 +15,9 @@ import Contact from './pages/Contact';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
+import ProductDetail from './pages/ProductDetail';
+import Cart from './pages/Cart';
+
 
 // Admin pages
 import AdminDashboard from './pages/admin/Dashboard';
@@ -87,6 +90,9 @@ function App() {
                 <Route path="/register" element={<Register setUser={setUser} />} />
                 <Route path="/login" element={<Login setUser={setUser} />} />
                 <Route path="*" element={<Navigate to="/" />} />
+                <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/cart" element={<Cart />} />
+
               </Routes>
             </main>
             <Footer />
