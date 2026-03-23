@@ -33,6 +33,9 @@ app.use('/api/users', userRoutes);
 const categoryRoutes = require('./routes/category'); //category.js
 app.use('/api/categories', categoryRoutes);
 
+const pageRoutes = require('./routes/page'); //page.js
+app.use('/api/pages', pageRoutes);
+
 const productRoutes = require('./routes/product'); // product.js
 app.use('/api/products', productRoutes);
 
