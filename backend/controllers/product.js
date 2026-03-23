@@ -1,4 +1,6 @@
 const { Product, Category } = require('../models');
+const fs = require('fs');
+const path = require('path');
 
 exports.getAllProducts = async (req, res) => {
   try {
@@ -30,16 +32,11 @@ exports.getProductById = async (req, res) => {
 
 exports.createProduct = async (req, res) => {
   try {
-    const { name, description, price, stock, brand, categoryId } = req.body;
+    const { name, description, price, stock, brand, categoryId, images = [] } = req.body;
 
     const category = await Category.findByPk(categoryId);
     if (!category) {
       return res.status(400).json({ message: 'Category not found' });
-    }
-
-    let images = [];
-    if (req.files && req.files.length > 0) {
-      images = req.files.map(file => `/uploads/products/${file.filename}`);
     }
 
     const product = await Product.create({
@@ -73,12 +70,31 @@ exports.updateProduct = async (req, res) => {
       }
     }
 
-    let updateData = { ...req.body };
-    if (req.files && req.files.length > 0) {
-      updateData.images = req.files.map(file => `/uploads/products/${file.filename}`);
+    const oldImages = product.images || [];
+    const newImages = req.body.images || [];
+
+    const removedImages = oldImages.filter(url => !newImages.includes(url));
+
+    if (removedImages.length) {
+      const uploadDir = path.join(__dirname, '../uploads/products');
+      removedImages.forEach(imageUrl => {
+        const filename = path.basename(imageUrl);
+        const filePath = path.join(uploadDir, filename);
+        fs.unlink(filePath, (err) => {
+          if (err && err.code !== 'ENOENT') {
+            console.error(`Error deleting file ${filename}:`, err);
+          }
+        });
+      });
     }
 
-    await product.update(updateData);
+    const { images, ...otherData } = req.body;
+    await product.update({
+      ...otherData,
+      images: newImages,
+      categoryId: req.body.categoryId || product.categoryId,
+    });
+
     res.json(product);
   } catch (error) {
     console.error('Update product error:', error);
@@ -92,6 +108,20 @@ exports.deleteProduct = async (req, res) => {
     if (!product) {
       return res.status(404).json({ message: 'Product not found' });
     }
+
+    if (product.images && product.images.length) {
+      const uploadDir = path.join(__dirname, '../uploads/products');
+      product.images.forEach(imageUrl => {
+        const filename = path.basename(imageUrl);
+        const filePath = path.join(uploadDir, filename);
+        fs.unlink(filePath, (err) => {
+          if (err && err.code !== 'ENOENT') {
+            console.error(`Error deleting file ${filename}:`, err);
+          }
+        });
+      });
+    }
+
     await product.destroy();
     res.status(204).send();
   } catch (error) {
