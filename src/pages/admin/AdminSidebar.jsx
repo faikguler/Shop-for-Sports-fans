@@ -41,6 +41,18 @@ const AdminSidebar = ({ setUser }) => {
             Users
           </NavLink>
         </li>
+
+        <li style={{ marginBottom: '10px' }}>
+          <NavLink
+            to="/admin/categories"
+            className={({ isActive }) => 
+              `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+            }
+          >
+            Categories
+          </NavLink>
+        </li>
+
         <li style={{ marginBottom: '10px' }}>
           <NavLink
             to="/admin/products"
