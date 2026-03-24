@@ -129,7 +129,7 @@ const Checkout = () => {
                   className="btn btn-warning w-100"
                   disabled={loading}
                 >
-                  {loading ? 'Processing...' : `Place Order ($${cartTotal.toFixed(2)})`}
+                  {loading ? 'Processing...' : `Place Order (£${cartTotal.toFixed(2)})`}
                 </button>
               </form>
             </div>
