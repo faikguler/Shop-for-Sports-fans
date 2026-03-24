@@ -22,9 +22,9 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Test route
-app.get('/', (req, res) => {
-  res.send('SportShop API working...');
-});
+//app.get('/', (req, res) => {
+//  res.send('SportShop API working...');
+//});
 
 // Models
 const User = require('./models/User');
@@ -78,6 +78,7 @@ const orderRoutes = require('./routes/order');
 app.use('/api/orders', orderRoutes);
 
 const frontendPath = path.join(__dirname, '../dist');
+console.log('Serving static from:', frontendPath);  // Log ekle
 app.use(express.static(frontendPath));
 app.get('*', (req, res) => {
   res.sendFile(path.join(frontendPath, 'index.html'));
