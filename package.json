@@ -8,7 +8,7 @@
     "dev": "nodemon backend/server.js",
     "dev:frontend": "vite",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\"",
-    "build": "npx vite build",
+    "build": "vite build && ls -la dist",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
