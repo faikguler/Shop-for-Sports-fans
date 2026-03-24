@@ -10,15 +10,6 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Frontend build folder
-const frontendPath = path.join(__dirname, '../dist');
-app.use(express.static(frontendPath));
-
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(frontendPath, 'index.html'));
-});
-
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -29,12 +20,12 @@ app.get('/', (req, res) => {
   res.send('SportShop API working...');
 });
 
+// Models
+const User = require('./models/User');
+
 sequelize.authenticate()
   .then(async () => {
     console.log('MySQL connected successfully.');
-
-// Models
-const User = require('./models/User'); // User Model
     try {
       const adminCount = await User.count({ where: { role: 'admin' } });
       if (adminCount === 0) {
@@ -77,8 +68,19 @@ app.use('/api/upload', uploadRoutes);
 const newsletterRoutes = require('./routes/newsletterRoutes'); // newsletterRoutes.js
 app.use('/api/newsletter', newsletterRoutes);
 
+const orderRoutes = require('./routes/order');
+app.use('/api/orders', orderRoutes);
 
-sequelize.sync()   // ({ alter: true }) 
+// Serve static frontend only in production
+if (process.env.NODE_ENV === 'production') {
+  const frontendPath = path.join(__dirname, '../dist');
+  app.use(express.static(frontendPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(frontendPath, 'index.html'));
+  });
+}
+
+sequelize.sync()
   .then(() => console.log('Database synced'))
   .catch(err => console.error('Sync error:', err));
 

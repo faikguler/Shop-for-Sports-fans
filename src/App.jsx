@@ -17,7 +17,11 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
-
+import Checkout from './pages/Checkout';
+import MyOrders from './pages/MyOrders';
+import OrderSuccess from './pages/OrderSuccess.jsx';
+import OrderDetail from './pages/OrderDetail';
+import DynamicPage from './pages/DynamicPage';
 
 // Admin pages
 import AdminDashboard from './pages/admin/Dashboard';
@@ -92,6 +96,11 @@ function App() {
                 <Route path="*" element={<Navigate to="/" />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/orders" element={<MyOrders />} />
+                <Route path="/order/:id/success" element={<OrderSuccess />} />
+                <Route path="/order/:id" element={<OrderDetail />} />
+                <Route path="/page/:slug" element={<DynamicPage />} />
 
               </Routes>
             </main>
