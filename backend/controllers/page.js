@@ -1,8 +1,8 @@
-const { page } = require('../models');
+const { Page } = require('../models');
 
 const getAllpages = async (req, res) => {
   try {
-    const pages = await page.findAll();
+    const pages = await Page.findAll();
     res.status(200).json(pages);
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
@@ -11,7 +11,7 @@ const getAllpages = async (req, res) => {
 
 const getpageById = async (req, res) => {
   try {
-    const page = await page.findByPk(req.params.id);
+    const page = await Page.findByPk(req.params.id);
     if (!page) {
       return res.status(404).json({ message: 'page not found' });
     }
@@ -21,10 +21,20 @@ const getpageById = async (req, res) => {
   }
 };
 
+const getpageByName = async (req, res) => {
+  try {
+    const page = await Page.findOne({ where: { name: req.params.name } });
+    if (!page) return res.status(404).json({ message: 'Page not found' });
+    res.json(page);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
 const createpage = async (req, res) => {
   try {
-    const { name, description } = req.body;
-    const newpage = await page.create({ name, description });
+    const { name, description, location } = req.body;
+    const newpage = await Page.create({ name, description, location });
     res.status(201).json(newpage);
   } catch (error) {
     if (error.name === 'SequelizeUniqueConstraintError') {
@@ -36,7 +46,7 @@ const createpage = async (req, res) => {
 
 const updatepage = async (req, res) => {
   try {
-    const page = await page.findByPk(req.params.id);
+    const page = await Page.findByPk(req.params.id);
     if (!page) {
       return res.status(404).json({ message: 'page not found' });
     }
@@ -53,7 +63,7 @@ const updatepage = async (req, res) => {
 
 const deletepage = async (req, res) => {
   try {
-    const page = await page.findByPk(req.params.id);
+    const page = await Page.findByPk(req.params.id);
     if (!page) {
       return res.status(404).json({ message: 'page not found' });
     }
@@ -67,6 +77,7 @@ const deletepage = async (req, res) => {
 module.exports = {
   getAllpages,
   getpageById,
+  getpageByName,
   createpage,
   updatepage,
   deletepage,
