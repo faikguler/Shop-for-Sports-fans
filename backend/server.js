@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const sequelize = require('./config/database');
 const path = require('path');
+const bcrypt = require('bcrypt');
 
 dotenv.config();
 
@@ -30,10 +31,31 @@ app.get('/', (req, res) => {
 
 sequelize.authenticate()
   .then(() => console.log('MySQL connected successfully.'))
-  .catch(err => console.error('Unable to connect to MySQL:', err));
 
 // Models
 const User = require('./models/User'); // User Model
+    try {
+      const adminCount = await User.count({ where: { role: 'admin' } });
+      if (adminCount === 0) {
+        const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
+        const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
+        const adminName = process.env.ADMIN_NAME || 'Admin';
+        const hashedPassword = await bcrypt.hash(adminPassword, 10);
+        await User.create({
+          name: adminName,
+          email: adminEmail,
+          password: hashedPassword,
+          role: 'admin',
+        });
+        console.log(`Admin user created: ${adminEmail} (password: ${adminPassword})`);
+      } else {
+        console.log('Admin user already exists');
+      }
+    } catch (err) {
+      console.error('Admin creation error:', err);
+    }
+  })
+  .catch(err => console.error('Unable to connect to MySQL:', err));
 
 // Routes
 const userRoutes = require('./routes/user'); // user.js 
