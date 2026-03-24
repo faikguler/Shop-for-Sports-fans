@@ -15,13 +15,22 @@ import Contact from './pages/Contact';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
+import ProductDetail from './pages/ProductDetail';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import MyOrders from './pages/MyOrders';
+import OrderSuccess from './pages/OrderSuccess.jsx';
+import OrderDetail from './pages/OrderDetail';
+import DynamicPage from './pages/DynamicPage';
 
 // Admin pages
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminUsers from './pages/admin/Users';
 import AdminProducts from './pages/admin/Products';
 import AdminOrders from './pages/admin/Orders';
-import AdminCategories from './pages/admin/Categories'; // Yeni
+import AdminCategories from './pages/admin/Categories';
+import Adminpages from './pages/admin/Pages';
+ 
 
 // Admin layout 
 const AdminLayout = ({ setUser }) => (
@@ -35,6 +44,7 @@ const AdminLayout = ({ setUser }) => (
         <Route path="products" element={<AdminProducts />} />
         <Route path="orders" element={<AdminOrders />} />
         <Route path="*" element={<Navigate to="dashboard" />} />
+        <Route path="pages" element={<Adminpages />} />
       </Routes>
     </div>
   </div>
@@ -84,6 +94,14 @@ function App() {
                 <Route path="/register" element={<Register setUser={setUser} />} />
                 <Route path="/login" element={<Login setUser={setUser} />} />
                 <Route path="*" element={<Navigate to="/" />} />
+                <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/orders" element={<MyOrders />} />
+                <Route path="/order/:id/success" element={<OrderSuccess />} />
+                <Route path="/order/:id" element={<OrderDetail />} />
+                <Route path="/page/:slug" element={<DynamicPage />} />
+
               </Routes>
             </main>
             <Footer />

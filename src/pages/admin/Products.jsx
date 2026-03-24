@@ -15,8 +15,11 @@ const AdminProducts = () => {
     brand: '',
     categoryId: '',
   });
-  const [imageFiles, setImageFiles] = useState([]);
-  const [previewUrls, setPreviewUrls] = useState([]);
+  
+  const [existingImages, setExistingImages] = useState([]);
+  const [newImageFiles, setNewImageFiles] = useState([]);
+  const [newPreviewUrls, setNewPreviewUrls] = useState([]);
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     fetchProducts();
@@ -43,33 +46,51 @@ const AdminProducts = () => {
     }
   };
 
-  const handleImageChange = (e) => {
-    const files = Array.from(e.target.files);
-    setImageFiles(files);
-    // Önizleme URL'leri oluştur
+  const handleImageSelect = (e) => {
+    let files = Array.from(e.target.files);
+    if (files.length > 5) {
+      alert('You can upload maximum 5 images');
+      files = files.slice(0, 5);
+    }
+    setNewImageFiles(files);
     const urls = files.map(file => URL.createObjectURL(file));
-    setPreviewUrls(urls);
+    setNewPreviewUrls(urls);
+  };
+
+  const handleRemoveExistingImage = (urlToRemove) => {
+    setExistingImages(prev => prev.filter(url => url !== urlToRemove));
+  };
+
+  const handleRemoveNewImage = (index) => {
+    setNewImageFiles(prev => prev.filter((_, i) => i !== index));
+    setNewPreviewUrls(prev => prev.filter((_, i) => i !== index));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formPayload = new FormData();
-    formPayload.append('name', formData.name);
-    formPayload.append('description', formData.description);
-    formPayload.append('price', formData.price);
-    formPayload.append('stock', formData.stock);
-    formPayload.append('brand', formData.brand);
-    formPayload.append('categoryId', formData.categoryId);
-
-    imageFiles.forEach(file => {
-      formPayload.append('images', file);
-    });
+    setUploading(true);
 
     try {
+      let uploadedUrls = [];
+
+      if (newImageFiles.length > 0) {
+        const uploadFormData = new FormData();
+        newImageFiles.forEach(file => uploadFormData.append('images', file));
+       const uploadRes = await API.post('/upload/images', uploadFormData);
+        uploadedUrls = uploadRes.data.imageUrls;
+      }
+
+      const finalImages = [...existingImages, ...uploadedUrls];
+
+      const payload = {
+        ...formData,
+        images: finalImages,
+      };
+
       if (editingProduct) {
-        await productService.update(editingProduct.id, formPayload);
+        await productService.update(editingProduct.id, payload);
       } else {
-        await productService.create(formPayload);
+        await productService.create(payload);
       }
 
       setFormData({
@@ -80,23 +101,15 @@ const AdminProducts = () => {
         brand: '',
         categoryId: '',
       });
-      setImageFiles([]);
-      setPreviewUrls([]);
+      setExistingImages([]);
+      setNewImageFiles([]);
+      setNewPreviewUrls([]);
       setEditingProduct(null);
       fetchProducts();
     } catch (error) {
       console.error('Error saving product:', error);
-    }
-  };
-
-  const handleDelete = async (id) => {
-    if (window.confirm('Are you sure?')) {
-      try {
-        await productService.delete(id);
-        fetchProducts();
-      } catch (error) {
-        console.error('Error deleting product:', error);
-      }
+    } finally {
+      setUploading(false);
     }
   };
 
@@ -110,9 +123,28 @@ const AdminProducts = () => {
       brand: product.brand || '',
       categoryId: product.categoryId,
     });
-
-  
+    setExistingImages(product.images || []);
+    setNewImageFiles([]);
+    setNewPreviewUrls([]);
   };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure?')) {
+      try {
+        await productService.delete(id);
+        fetchProducts();
+      } catch (error) {
+        console.error('Error deleting product:', error);
+      }
+    }
+  };
+
+  const efix = (e) => {
+  if (e.key === 'e' || e.key === 'E' || e.key === '-' || e.key === '+') {
+    e.preventDefault();
+  }
+  };
+
 
   if (loading) return <div>Loading...</div>;
 
@@ -163,6 +195,7 @@ const AdminProducts = () => {
                   className="form-control"
                   value={formData.price}
                   onChange={(e) => setFormData({ ...formData, price: e.target.value })}
+                  onKeyDown={efix}
                   required
                 />
               </div>
@@ -173,6 +206,7 @@ const AdminProducts = () => {
                   className="form-control"
                   value={formData.stock}
                   onChange={(e) => setFormData({ ...formData, stock: e.target.value })}
+                  onKeyDown={efix}
                   required
                 />
               </div>
@@ -190,26 +224,75 @@ const AdminProducts = () => {
                   ))}
                 </select>
               </div>
+
+              {/* Existing images */}
+              {existingImages.length > 0 && (
+                <div className="col-12 mb-3">
+                  <label className="form-label">Current Images</label>
+                  <div className="d-flex flex-wrap gap-2">
+                    {existingImages.map((url, idx) => (
+                      <div key={idx} className="position-relative">
+                        <img
+                          src={url}
+                          alt="product"
+                          style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '4px' }}
+                        />
+                        <button
+                          type="button"
+                          className="btn btn-sm btn-danger position-absolute top-0 end-0"
+                          style={{ borderRadius: '50%', padding: '0 4px', fontSize: '12px' }}
+                          onClick={() => handleRemoveExistingImage(url)}
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* New image upload */}
               <div className="col-12 mb-3">
-                <label className="form-label">Product Images (max 5)</label>
+                <label className="form-label">Add New Images (max 5)</label>
                 <input
                   type="file"
                   className="form-control"
                   accept="image/*"
                   multiple
-                  onChange={handleImageChange}
+                  onChange={handleImageSelect}
                 />
-                {previewUrls.length > 0 && (
-                  <div className="mt-2 d-flex flex-wrap gap-2">
-                    {previewUrls.map((url, idx) => (
-                      <img key={idx} src={url} alt="preview" style={{ width: '100px', height: '100px', objectFit: 'cover' }} />
+                <small className="text-muted">You can select up to 5 new images.</small>
+              </div>
+
+              {/* New image previews */}
+              {newPreviewUrls.length > 0 && (
+                <div className="col-12 mb-3">
+                  <label className="form-label">New Images Preview</label>
+                  <div className="d-flex flex-wrap gap-2">
+                    {newPreviewUrls.map((url, idx) => (
+                      <div key={idx} className="position-relative">
+                        <img
+                          src={url}
+                          alt="preview"
+                          style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '4px' }}
+                        />
+                        <button
+                          type="button"
+                          className="btn btn-sm btn-danger position-absolute top-0 end-0"
+                          style={{ borderRadius: '50%', padding: '0 4px', fontSize: '12px' }}
+                          onClick={() => handleRemoveNewImage(idx)}
+                        >
+                          ✕
+                        </button>
+                      </div>
                     ))}
                   </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
-            <button type="submit" className="btn btn-primary me-2">
-              {editingProduct ? 'Update' : 'Create'}
+
+            <button type="submit" className="btn btn-primary me-2" disabled={uploading}>
+              {uploading ? 'Saving...' : (editingProduct ? 'Update' : 'Create')}
             </button>
             {editingProduct && (
               <button
@@ -225,8 +308,9 @@ const AdminProducts = () => {
                     brand: '',
                     categoryId: '',
                   });
-                  setImageFiles([]);
-                  setPreviewUrls([]);
+                  setExistingImages([]);
+                  setNewImageFiles([]);
+                  setNewPreviewUrls([]);
                 }}
               >
                 Cancel
@@ -259,14 +343,18 @@ const AdminProducts = () => {
                   <td>{product.id}</td>
                   <td>
                     {product.images && product.images.length > 0 ? (
-                      <img src={product.images[0]} alt={product.name} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
+                      <img
+                        src={product.images[0]}
+                        alt={product.name}
+                        style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                      />
                     ) : (
                       'No image'
                     )}
                   </td>
                   <td>{product.name}</td>
                   <td>{product.brand}</td>
-                  <td>${product.price}</td>
+                  <td>£{product.price}</td>
                   <td>{product.stock}</td>
                   <td>{product.category?.name || product.categoryId}</td>
                   <td>

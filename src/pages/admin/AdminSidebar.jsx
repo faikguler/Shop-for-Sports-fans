@@ -9,6 +9,10 @@ const AdminSidebar = ({ setUser }) => {
     navigate('/login');
   };
 
+   const handleRedirect = () => {
+    navigate('/');
+  };
+
   return (
     <div style={{ 
       width: '250px', 
@@ -53,6 +57,17 @@ const AdminSidebar = ({ setUser }) => {
           </NavLink>
         </li>
 
+          <li style={{ marginBottom: '10px' }}>
+          <NavLink
+            to="/admin/pages"
+            className={({ isActive }) => 
+              `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+            }
+          >
+            Page Editor
+          </NavLink>
+        </li> 
+        
         <li style={{ marginBottom: '10px' }}>
           <NavLink
             to="/admin/products"
@@ -79,6 +94,14 @@ const AdminSidebar = ({ setUser }) => {
             className="btn btn-danger w-100"
           >
             Logout
+          </button>
+        </li>
+          <li style={{ marginTop: '30px', padding: '0 20px' }}>
+          <button 
+            onClick={handleRedirect}
+            className="btn btn-success w-100"
+          >
+            Home
           </button>
         </li>
       </ul>
