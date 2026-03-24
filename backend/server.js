@@ -7,6 +7,12 @@ const bcrypt = require('bcrypt');
 
 dotenv.config();
 
+
+console.log('DB_DIALECT:', process.env.DB_DIALECT);
+console.log('DB_HOST:', process.env.DB_HOST);
+console.log('DB_NAME:', process.env.DB_NAME);
+
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
