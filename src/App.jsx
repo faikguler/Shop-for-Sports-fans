@@ -30,7 +30,7 @@ import AdminProducts from './pages/admin/Products';
 import AdminOrders from './pages/admin/Orders';
 import AdminCategories from './pages/admin/Categories';
 import Adminpages from './pages/admin/Pages';
- 
+import Adminsliders from './pages/admin/Slider.jsx';
 
 // Admin layout 
 const AdminLayout = ({ setUser }) => (
@@ -45,6 +45,7 @@ const AdminLayout = ({ setUser }) => (
         <Route path="orders" element={<AdminOrders />} />
         <Route path="*" element={<Navigate to="dashboard" />} />
         <Route path="pages" element={<Adminpages />} />
+        <Route path="slider" element={<Adminsliders />} /> {/* Maybe capital S*/}
       </Routes>
     </div>
   </div>
