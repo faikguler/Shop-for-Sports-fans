@@ -9,6 +9,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Frontend build folder
+const frontendPath = path.join(__dirname, '../dist');
+app.use(express.static(frontendPath));
+
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
+});
+
 // Middleware
 app.use(cors());
 app.use(express.json());
