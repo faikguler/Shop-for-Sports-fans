@@ -30,7 +30,8 @@ app.get('/', (req, res) => {
 });
 
 sequelize.authenticate()
-  .then(() => console.log('MySQL connected successfully.'))
+  .then(async () => {
+    console.log('MySQL connected successfully.');
 
 // Models
 const User = require('./models/User'); // User Model
