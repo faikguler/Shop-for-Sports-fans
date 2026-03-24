@@ -24,7 +24,7 @@ const Register = ({ setUser }) => {
       setUser(user);
       navigate('/');
     } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed');
+      setError(err.response?.data?.message || 'Registration failed, email already in use.');
     }
   };
 

@@ -46,7 +46,7 @@ const Login = ({ setUser }) => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-warning w-100">Login</button>
+        <button type="submit" className="btn btn-warning w-100 mb-5">Login</button>
       </form>
     </div>
   );
