@@ -20,6 +20,10 @@ page.init(
       type: DataTypes.TEXT,
       allowNull: true,
     },
+    location: {
+      type: DataTypes.ENUM('header', 'footer'),
+      defaultValue: 'header',
+    },
   },
   {
     sequelize,

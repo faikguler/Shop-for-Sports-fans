@@ -2,6 +2,7 @@ const router = require('express').Router();
 const {
   getAllpages,
   getpageById,
+  getpageByName,
   createpage,
   updatepage,
   deletepage,
@@ -10,6 +11,7 @@ const { authMiddleware, adminMiddleware } = require('../utils/auth');
 //public
 router.get('/', getAllpages);
 router.get('/:id', getpageById);
+router.get('/by-name/:name', getpageByName);
 
 
 //for admin

@@ -1,7 +1,22 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { useState, useEffect } from 'react';
+import { pageService } from '../services/pageService';
+
 
 const Navbar = ({ user, setUser }) => {
+  const [headerPages, setHeaderPages] = useState([]);
+
+    useEffect(() => {
+    pageService.getAll()
+      .then(res => {
+        const pages = res.data;
+        setHeaderPages(pages.filter(p => p.location === 'header'));
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+
   const navigate = useNavigate();
   const { cartCount } = useCart();
 
@@ -28,9 +43,15 @@ const Navbar = ({ user, setUser }) => {
             <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/products">Products</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/about">About</NavLink>
-            </li>
+
+            {headerPages.map(page => (
+              <li className="nav-item" key={page.id}>
+                <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to={`/page/${page.name}`}>
+                  {page.name}
+                </NavLink>
+              </li>
+            ))}
+
             <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/contact">Contact</NavLink>
             </li>
@@ -39,8 +60,12 @@ const Navbar = ({ user, setUser }) => {
           {user ? (
             <>
               <span className="text-white me-2">Hi, {user.name}</span>
+
               <Link to="/profile" className="btn btn-secondary ms-2">
                 <i className="bi bi-person-circle"></i> Profile
+              </Link>
+              <Link to="/orders" className="btn btn-secondary ms-2">
+                <i className="bi bi-list-ul"></i> Orders
               </Link>
               {user.role === 'admin' && (
                 <Link to="/admin/dashboard" className="btn btn-secondary ms-2">

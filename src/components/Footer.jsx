@@ -1,16 +1,28 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { pageService } from '../services/pageService';
 
 const Footer = () => {
   const [email,setEmail] = useState('');
   const [status, setStatus] = useState('');
+  const [footerPages, setFooterPages] = useState([]);
 
+    useEffect(() => {
+    pageService.getAll()
+      .then(res => {
+        const pages = res.data;
+        setFooterPages(pages.filter(p => p.location === 'footer'));
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  
   const handleSubscribe = async (e) => {
     e.preventDefault();
 
 try {
 
-    const response = await fetch ('http://localhost:5001/api/newsletter',{
+    const response = await fetch ('/api/newsletter',{
     method: 'POST',
     headers: { 'Content-Type': 'application/json'},
     body: JSON.stringify({ email }),
@@ -57,10 +69,13 @@ try {
         <div className="col-md-2">
           <h6 className="fw-bold mb-3">Help</h6>
           <ul className="list-unstyled">
-            <li className="mb-2"><a href="#" className="text-white text-decoration-none">FAQs</a></li>
-            <li className="mb-2"><a href="#" className="text-white text-decoration-none">Shipping & Delivery</a></li>
-            <li className="mb-2"><a href="#" className="text-white text-decoration-none">Returns</a></li>
-            <li className="mb-2"><a href="#" className="text-white text-decoration-none">Privacy Policy</a></li>
+            {footerPages.map(page => (
+              <li key={page.id} className="mb-2">
+                <Link to={`/page/${page.name}`} className="text-white text-decoration-none">
+                  {page.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="col-md-4">

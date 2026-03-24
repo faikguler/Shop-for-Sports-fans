@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { pageService } from '../../services/pageService';
+import { Editor } from '@tinymce/tinymce-react';
 
 const Adminpages = () => {
   const [pages, setpages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingpage, setEditingpage] = useState(null);
-  const [formData, setFormData] = useState({ name: '', description: '' });
+  const [formData, setFormData] = useState({ name: '', description: '',  location: 'header', });
 
   useEffect(() => {
     fetchpages();
@@ -35,7 +36,7 @@ const Adminpages = () => {
 
   const handleEdit = (page) => {
     setEditingpage(page);
-    setFormData({ name: page.name, description: page.description || '' });
+    setFormData({ name: page.name, description: page.description || '' ,  location: page.location || 'header',});
   };
 
   const handleUpdate = async (e) => {
@@ -85,13 +86,40 @@ const Adminpages = () => {
             </div>
             <div className="mb-3">
               <label className="form-label">Description (optional)</label>
-              <textarea
-                className="form-control"
-                rows="2"
+              <Editor
+                apiKey={import.meta.env.VITE_TINYMCE_API_KEY}
                 value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                onEditorChange={(content) => setFormData({ ...formData, description: content })}
+                init={{
+                  height: 400,
+                  menubar: true,
+                  plugins: [
+                    'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                    'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                    'insertdatetime', 'media', 'table', 'help', 'wordcount'
+                  ],
+                  toolbar: 'undo redo | blocks | ' +
+                    'bold italic backcolor | alignleft aligncenter ' +
+                    'alignright alignjustify | bullist numlist outdent indent | ' +
+                    'removeformat | help',
+                  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                }}
               />
             </div>
+            
+
+            <div className="mb-3">
+              <label className="form-label">Location</label>
+              <select
+                className="form-select"
+                value={formData.location || 'header'}
+                onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+              >
+                <option value="header">Header Menu</option>
+                <option value="footer">Footer Menu</option>
+              </select>
+            </div>  
+
             <button type="submit" className="btn btn-primary me-2">
               {editingpage ? 'Update' : 'Create'}
             </button>
@@ -118,6 +146,7 @@ const Adminpages = () => {
                 <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Location</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -127,6 +156,7 @@ const Adminpages = () => {
                   <td>{cat.id}</td>
                   <td>{cat.name}</td>
                   <td>{cat.description}</td>
+                  <td>{cat.location || 'header'}</td>
                   <td>
                     <button
                       className="btn btn-sm btn-warning me-2"
