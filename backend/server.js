@@ -86,7 +86,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-sequelize.sync()
+sequelize.sync({ alter: true })
   .then(() => console.log('Database synced'))
   .catch(err => console.error('Sync error:', err));
 
