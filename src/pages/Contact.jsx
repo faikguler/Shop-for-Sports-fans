@@ -39,11 +39,11 @@ const Contact = () => {
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Faik Ramadan"/>
+                  <input type="text" class="form-control" id="name" placeholder="John Doe"/>
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com"/>
+                  <input type="email" class="form-control" id="email" placeholder="JohnDoe@example.com"/>
                 </div>
                 <div class="col-12">
                   <label for="subject" class="form-label">Subject</label>

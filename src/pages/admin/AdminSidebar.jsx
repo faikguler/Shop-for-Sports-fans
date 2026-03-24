@@ -9,6 +9,10 @@ const AdminSidebar = ({ setUser }) => {
     navigate('/login');
   };
 
+   const handleRedirect = () => {
+    navigate('/');
+  };
+
   return (
     <div style={{ 
       width: '250px', 
@@ -90,6 +94,14 @@ const AdminSidebar = ({ setUser }) => {
             className="btn btn-danger w-100"
           >
             Logout
+          </button>
+        </li>
+          <li style={{ marginTop: '30px', padding: '0 20px' }}>
+          <button 
+            onClick={handleRedirect}
+            className="btn btn-success w-100"
+          >
+            Home
           </button>
         </li>
       </ul>
