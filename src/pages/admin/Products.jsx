@@ -76,7 +76,7 @@ const AdminProducts = () => {
       if (newImageFiles.length > 0) {
         const uploadFormData = new FormData();
         newImageFiles.forEach(file => uploadFormData.append('images', file));
-       const uploadRes = await API.post('/upload/images', uploadFormData);
+       const uploadRes = await API.post('/upload/products', uploadFormData);
         uploadedUrls = uploadRes.data.imageUrls;
       }
 
