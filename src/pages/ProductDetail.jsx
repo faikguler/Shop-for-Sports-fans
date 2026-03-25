@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { productService } from '../services/productService';
 import { useCart } from '../context/CartContext';
+import ReviewSection from '../components/ReviewSection';
 
-const ProductDetail = () => {
+const ProductDetail = ({ user }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
@@ -109,6 +110,13 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
+
+      <div className="row mt-5">
+        <div className="col-12">
+          <ReviewSection productId={product.id} user={user} />
+        </div>
+      </div>
+
     </div>
   );
 };

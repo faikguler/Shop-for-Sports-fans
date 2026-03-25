@@ -33,6 +33,7 @@ import Adminpages from './pages/admin/Pages';
 import Adminsliders from './pages/admin/Slider.jsx';
 import AdminNewsletters from './pages/admin/Newsletters';
 import AdminContact from './pages/admin/Contact.jsx';
+import AdminReviews from './pages/admin/Reviews';
 
 // Admin layout 
 const AdminLayout = ({ setUser }) => (
@@ -50,6 +51,7 @@ const AdminLayout = ({ setUser }) => (
         <Route path="slider" element={<Adminsliders />} /> {/* Maybe capital S*/}
         <Route path="newsletters" element={<AdminNewsletters />} />
         <Route path="contact-messages" element={<AdminContact />} />
+        <Route path="reviews" element={<AdminReviews />} />
 
       </Routes>
     </div>
@@ -100,7 +102,7 @@ function App() {
                 <Route path="/register" element={<Register setUser={setUser} />} />
                 <Route path="/login" element={<Login setUser={setUser} />} />
                 <Route path="*" element={<Navigate to="/" />} />
-                <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/product/:id" element={<ProductDetail user={user} />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/orders" element={<MyOrders />} />

@@ -54,6 +54,8 @@ app.use('/api/sliders', sliderRoutes);
 const contactRoutes = require('./routes/contact');
 app.use('/api/contact', contactRoutes);
 
+const reviewRoutes = require('./routes/review');
+app.use('/api/reviews', reviewRoutes);
 
 const frontendPath = path.join(__dirname, '../dist');
 console.log('Serving static from:', frontendPath); 

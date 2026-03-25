@@ -1,0 +1,32 @@
+[
+  {
+    "productName": "Nike Air Max 2024",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Very comfortable shoes, perfect for my daily runs!"
+  },
+  {
+    "productName": "Adidas Predator Elite FG",
+    "userEmail": "user@example.com",
+    "rating": 4,
+    "comment": "Great grip and control, but a bit tight at first."
+  },
+  {
+    "productName": "Wilson Evolution Basketball",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Best basketball I've ever used. Great feel and durability."
+  },
+  {
+    "productName": "Under Armour Tech 2.0 Tee",
+    "userEmail": "admin@example.com",
+    "rating": 5,
+    "comment": "Lightweight and moisture-wicking, perfect for gym."
+  },
+  {
+    "productName": "Nike Air Max 2024",
+    "userEmail": "admin@example.com",
+    "rating": 4,
+    "comment": "Solid running shoes, but a bit pricey."
+  }
+]
