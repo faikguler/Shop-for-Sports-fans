@@ -1,9 +1,11 @@
 const { Slider } = require('../models');
+const fs = require('fs');
+const path = require('path');
 
 const getAllSliders = async (req, res) => {
   try {
-    const Sliders = await Slider.findAll();
-    res.status(200).json(Sliders);
+    const sliders = await Slider.findAll();
+    res.status(200).json(sliders);
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
@@ -11,11 +13,11 @@ const getAllSliders = async (req, res) => {
 
 const getSliderById = async (req, res) => {
   try {
-    const Slider = await Slider.findByPk(req.params.id);
-    if (!Slider) {
+    const slider = await Slider.findByPk(req.params.id);
+    if (!slider) {
       return res.status(404).json({ message: 'Slider not found' });
     }
-    res.status(200).json(Slider);
+    res.status(200).json(slider);
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
@@ -23,43 +25,57 @@ const getSliderById = async (req, res) => {
 
 const createSlider = async (req, res) => {
   try {
-    const { name, description, location } = req.body;
+    const { img } = req.body; 
     const newSlider = await Slider.create({ img });
     res.status(201).json(newSlider);
   } catch (error) {
-    if (error.name === 'SequelizeUniqueConstraintError') {
-      return res.status(400).json({ message: 'Slider name must be unique' });
-    }
+    console.error('Create slider error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
 
 const updateSlider = async (req, res) => {
   try {
-    const Slider = await Slider.findByPk(req.params.id);
-    if (!Slider) {
+    const slider = await Slider.findByPk(req.params.id);
+    if (!slider) {
       return res.status(404).json({ message: 'Slider not found' });
     }
-    await Slider.update(req.body);
-    res.status(200).json(Slider);
+    await slider.update(req.body);
+    res.status(200).json(slider);
   } catch (error) {
-    if (error.name === 'SequelizeUniqueConstraintError') {
-      return res.status(400).json({ message: 'Slider name must be unique' });
-    }
+    console.error('Update slider error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
 
-
 const deleteSlider = async (req, res) => {
   try {
-    const Slider = await Slider.findByPk(req.params.id);
-    if (!Slider) {
+    const slider = await Slider.findByPk(req.params.id);
+    if (!slider) {
       return res.status(404).json({ message: 'Slider not found' });
     }
-    await Slider.destroy();
-    res.status(204).send(); 
+
+    // Delete associated image files
+    if (slider.img && Array.isArray(slider.img)) {
+      const uploadDir = path.join(__dirname, '../uploads/slider');
+      slider.img.forEach(imageUrl => {
+        // Extract filename from the URL (e.g., /uploads/slider/slider-123.jpg)
+        const filename = path.basename(imageUrl);
+        const filePath = path.join(uploadDir, filename);
+        fs.unlink(filePath, (err) => {
+          if (err && err.code !== 'ENOENT') {
+            console.error(`Error deleting file ${filename}:`, err.message);
+          }
+        });
+      });
+    } else {
+      console.log('No images to delete or img field not an array');
+    }
+
+    await slider.destroy();
+    res.status(204).send();
   } catch (error) {
+    console.error('Delete slider error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };

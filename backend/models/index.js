@@ -7,6 +7,7 @@ const Order = require('./Order');
 const OrderItem = require('./OrderItem');
 const Newsletter = require('./Newsletter');
 const Slider = require('./Slider');
+const ContactMessage = require('./Contact');
 
 
 
@@ -28,6 +29,8 @@ OrderItem.belongsTo(Order, { foreignKey: 'orderId' });
 Product.hasMany(OrderItem, { foreignKey: 'productId' });
 OrderItem.belongsTo(Product, { foreignKey: 'productId' });
 
+User.hasMany(Review, { foreignKey: 'userId' });
+Review.belongsTo(User, { foreignKey: 'userId' });
 
 module.exports = {
   User,
@@ -38,5 +41,6 @@ module.exports = {
   Order,
   OrderItem,
   Newsletter,
-  Slider
+  Slider,
+  ContactMessage
 };

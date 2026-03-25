@@ -1,0 +1,12 @@
+[
+  { "email": "john.doe@example.com", "isActive": true },
+  { "email": "jane.smith@example.com", "isActive": true },
+  { "email": "alex.johnson@example.com", "isActive": true },
+  { "email": "maria.garcia@example.com", "isActive": true },
+  { "email": "david.wilson@example.com", "isActive": false },
+  { "email": "sarah.lee@example.com", "isActive": true },
+  { "email": "michael.brown@example.com", "isActive": true },
+  { "email": "emily.davis@example.com", "isActive": true },
+  { "email": "chris.martin@example.com", "isActive": false },
+  { "email": "laura.taylor@example.com", "isActive": true }
+]

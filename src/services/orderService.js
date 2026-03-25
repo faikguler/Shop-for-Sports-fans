@@ -2,7 +2,7 @@ import API from './api';
 
 export const orderService = {
   create: (orderData) => API.post('/orders', orderData),
-  getUserOrders: () => API.get('/orders'),
+  getUserOrders: () => API.get('/orders/me'),
   getById: (id) => API.get(`/orders/${id}`),
 
   

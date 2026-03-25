@@ -103,7 +103,7 @@ const OrderDetail = () => {
         </div>
       </div>
       <div className="mt-4">
-        <Link to="/my-orders" className="btn btn-outline-secondary">
+        <Link to="/orders" className="btn btn-outline-secondary">
           Back to Orders
         </Link>
       </div>
