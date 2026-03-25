@@ -1,32 +1,98 @@
 [
   {
-    "productName": "Nike Air Max 2024",
+    "productName": "Nike Air Max Dn",
     "userEmail": "user@example.com",
     "rating": 5,
-    "comment": "Very comfortable shoes, perfect for my daily runs!"
+    "comment": "Amazing comfort and style! Perfect for my daily runs."
   },
   {
-    "productName": "Adidas Predator Elite FG",
-    "userEmail": "user@example.com",
+    "productName": "Nike Air Max Dn",
+    "userEmail": "admin@example.com",
     "rating": 4,
-    "comment": "Great grip and control, but a bit tight at first."
+    "comment": "Great shoes, but a bit pricey."
   },
   {
-    "productName": "Wilson Evolution Basketball",
+    "productName": "Predator League Fold-Over Tongue Firm/Multi-Ground Boots",
     "userEmail": "user@example.com",
     "rating": 5,
-    "comment": "Best basketball I've ever used. Great feel and durability."
+    "comment": "Excellent grip and control on firm ground. Highly recommend."
+  },
+  {
+    "productName": "Predator League Fold-Over Tongue Firm/Multi-Ground Boots",
+    "userEmail": "admin@example.com",
+    "rating": 4,
+    "comment": "Very comfortable once broken in."
+  },
+  {
+    "productName": "Jordan Ultimate 2.0 8P",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Best basketball I've ever owned. Great grip and feel."
+  },
+  {
+    "productName": "Jordan Ultimate 2.0 8P",
+    "userEmail": "admin@example.com",
+    "rating": 5,
+    "comment": "Durable and responsive. Worth every penny."
+  },
+  {
+    "productName": "Under Armour Tech 2.0 Tee",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Lightweight and perfect for the gym."
   },
   {
     "productName": "Under Armour Tech 2.0 Tee",
     "userEmail": "admin@example.com",
-    "rating": 5,
-    "comment": "Lightweight and moisture-wicking, perfect for gym."
+    "rating": 4,
+    "comment": "Very comfortable, but runs a bit small."
   },
   {
-    "productName": "Nike Air Max 2024",
+    "productName": "Velocity NITRO™ 4 Running Shoes",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Super responsive cushioning. Great for long distances."
+  },
+  {
+    "productName": "Velocity NITRO™ 4 Running Shoes",
     "userEmail": "admin@example.com",
     "rating": 4,
-    "comment": "Solid running shoes, but a bit pricey."
+    "comment": "Solid running shoes, good value."
+  },
+  {
+    "productName": "Nike Dri-FIT Academy",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Great training jersey, keeps me dry during intense sessions."
+  },
+  {
+    "productName": "Nike Dri-FIT Academy",
+    "userEmail": "admin@example.com",
+    "rating": 4,
+    "comment": "Nice fit and breathable."
+  },
+  {
+    "productName": "Advanced Grip Control Composite Indoor/Outdoor Basketball",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Excellent grip on both indoor and outdoor courts."
+  },
+  {
+    "productName": "Advanced Grip Control Composite Indoor/Outdoor Basketball",
+    "userEmail": "admin@example.com",
+    "rating": 4,
+    "comment": "Good quality, but a bit heavy."
+  },
+  {
+    "productName": "Lift Seamless Leggings",
+    "userEmail": "user@example.com",
+    "rating": 5,
+    "comment": "Super comfortable and squat-proof. Love them!"
+  },
+  {
+    "productName": "Lift Seamless Leggings",
+    "userEmail": "admin@example.com",
+    "rating": 5,
+    "comment": "Great fit and quality."
   }
 ]
