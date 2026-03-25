@@ -33,7 +33,41 @@ const newsletterController = {
      } catch (err) {
             res.status(500).json({message: 'Database error', error: err});
         }
+    },
+
+      getAll: async (req, res) => {
+    try {
+      const subscribers = await Newsletter.findAll({ order: [['createdAt', 'DESC']] });
+      res.json(subscribers);
+    } catch (err) {
+      res.status(500).json({ message: 'Server error', error: err.message });
     }
+  },
+
+  toggleActive: async (req, res) => {
+    try {
+      const { email } = req.params;
+      const { isActive } = req.body;
+      const subscriber = await Newsletter.findByPk(email);
+      if (!subscriber) return res.status(404).json({ message: 'Subscriber not found' });
+      await subscriber.update({ isActive });
+      res.json(subscriber);
+    } catch (err) {
+      res.status(500).json({ message: 'Server error', error: err.message });
+    }
+  },
+
+  delete: async (req, res) => {
+    try {
+      const { email } = req.params;
+      const subscriber = await Newsletter.findByPk(email);
+      if (!subscriber) return res.status(404).json({ message: 'Subscriber not found' });
+      await subscriber.destroy();
+      res.status(204).send();
+    } catch (err) {
+      res.status(500).json({ message: 'Server error', error: err.message });
+    }
+  }
 
 };
 

@@ -31,6 +31,8 @@ import AdminOrders from './pages/admin/Orders';
 import AdminCategories from './pages/admin/Categories';
 import Adminpages from './pages/admin/Pages';
 import Adminsliders from './pages/admin/Slider.jsx';
+import AdminNewsletters from './pages/admin/Newsletters';
+import AdminContact from './pages/admin/Contact.jsx';
 
 // Admin layout 
 const AdminLayout = ({ setUser }) => (
@@ -46,6 +48,9 @@ const AdminLayout = ({ setUser }) => (
         <Route path="*" element={<Navigate to="dashboard" />} />
         <Route path="pages" element={<Adminpages />} />
         <Route path="slider" element={<Adminsliders />} /> {/* Maybe capital S*/}
+        <Route path="newsletters" element={<AdminNewsletters />} />
+        <Route path="contact-messages" element={<AdminContact />} />
+
       </Routes>
     </div>
   </div>

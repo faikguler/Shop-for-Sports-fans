@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "subject": "Product inquiry",
+    "message": "Do you have the new Nike Air Max in size 10?"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "subject": "Order status",
+    "message": "I placed order #123, when will it ship?"
+  },
+  {
+    "name": "Alex Johnson",
+    "email": "alex@example.com",
+    "subject": "Return policy",
+    "message": "What's your return policy for worn shoes?"
+  }
+]
