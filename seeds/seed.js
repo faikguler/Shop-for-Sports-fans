@@ -1,6 +1,6 @@
 const sequelize = require('../backend/config/database');
 const bcrypt = require('bcrypt');
-const { Category, Product, User, Page, Slider, Order, OrderItem, Newsletter, ContactMessage } = require('../backend/models');
+const { Category, Product, User, Page, Slider, Order, OrderItem, Newsletter, ContactMessage,Review } = require('../backend/models');
 
 // Load seed data
 const categoriesData = require('./categories.json');
@@ -11,6 +11,7 @@ const slidersData = require('./sliders.json');
 const ordersData = require('./orders.json');
 const newslettersData = require('./newsletters.json');
 const contactData = require('./contact.json');
+const reviewsData = require('./reviews.json');
 
 const seedDatabase = async () => {
   try {
@@ -95,6 +96,39 @@ const seedDatabase = async () => {
     }
     console.log('Orders seeded.');
 
+
+
+
+
+
+    const productNameToId = {};
+    createdProducts.forEach(p => { productNameToId[p.name] = p.id; });
+
+    const userEmailToId = {};
+    createdUsers.forEach(u => { userEmailToId[u.email] = u.id; });
+
+    const reviewsToInsert = [];
+    for (const rev of reviewsData) {
+      const productId = productNameToId[rev.productName];
+      const userId = userEmailToId[rev.userEmail];
+      if (productId && userId) {
+        reviewsToInsert.push({
+          productId,
+          userId,
+          rating: rev.rating,
+          comment: rev.comment,
+        });
+      } else {
+        console.warn(`Skipping review: product ${rev.productName} or user ${rev.userEmail} not found`);
+      }
+    }
+
+    if (reviewsToInsert.length) {
+      await Review.bulkCreate(reviewsToInsert);
+      console.log('Reviews seeded.');
+    }
+
+    
     console.log('Seeding completed successfully.');
     process.exit(0);
   } catch (err) {
