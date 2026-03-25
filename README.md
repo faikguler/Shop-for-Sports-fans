@@ -105,14 +105,14 @@ All authentication is handled with JWT, and the cart persists in localStorage. T
     npm run seed
 
 
-###▶️Deployment
-Backend runs on http://localhost:5000
-Frontend runs on http://localhost:5175
+### ▶️Deployment
+-Backend runs on http://localhost:5000
+-Frontend runs on http://localhost:5175
 
     ```bash
     npm run dev:all
 
-###🤝Production
+### 🤝Production
 
     ```bash
     npm run build   # builds the frontend
