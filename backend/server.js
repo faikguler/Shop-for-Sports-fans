@@ -79,6 +79,10 @@ app.use('/api/orders', orderRoutes);
 const sliderRoutes = require('./routes/slider');
 app.use('/api/sliders', sliderRoutes);
 
+const contactRoutes = require('./routes/contact');
+app.use('/api/contact', contactRoutes);
+
+
 const frontendPath = path.join(__dirname, '../dist');
 console.log('Serving static from:', frontendPath); 
 app.use(express.static(frontendPath));
