@@ -106,8 +106,8 @@ All authentication is handled with JWT, and the cart persists in localStorage. T
 
 
 ### ▶️Deployment
--Backend runs on http://localhost:5000
--Frontend runs on http://localhost:5175
+- Backend runs on http://localhost:5000
+- Frontend runs on http://localhost:5175
 
     ```bash
     npm run dev:all
@@ -120,14 +120,14 @@ All authentication is handled with JWT, and the cart persists in localStorage. T
 
 ### License
 
-This project is licensed under the ISC License. See the LICENSE file for details.
+- This project is licensed under the ISC License. See the LICENSE file for details.
 
 
 
-###👥Team
+### 👥Team
 
 **Coders of the Apocalypse**
--Faik
--Abdul
--Blaize
+- Faik
+- Abdul
+- Blaize
 Built with ❤️ for the final project.
