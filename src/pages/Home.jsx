@@ -43,6 +43,18 @@ const Home = () => {
     <>
       <section className="bg-dark text-white py-5">
         <div className="container py-5">
+          <div className="row mb-4">
+            <div className="col-12">
+              <div className="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Demo Login: ----- </strong> 
+                <span className="ms-2"><strong>Admin:</strong>  admin@example.com / admin123</span>
+                <span className="mx-2">|||||||||</span>
+                <span><strong>User:</strong>  user@example.com / user123</span>
+                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h1 className="display-3 fw-bold mb-4">For Sports Fans!</h1>
