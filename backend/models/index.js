@@ -7,6 +7,7 @@ const Order = require('./Order');
 const OrderItem = require('./OrderItem');
 const Newsletter = require('./Newsletter');
 const Slider = require('./Slider');
+const ContactMessage = require('./Contact');
 
 
 
@@ -38,5 +39,6 @@ module.exports = {
   Order,
   OrderItem,
   Newsletter,
-  Slider
+  Slider,
+  ContactMessage
 };

@@ -1,6 +1,6 @@
 const sequelize = require('../backend/config/database');
 const bcrypt = require('bcrypt');
-const { Category, Product, User, Page, Slider, Order, OrderItem, Newsletter } =  require('../backend/models'); 
+const { Category, Product, User, Page, Slider, Order, OrderItem, Newsletter, ContactMessage } = require('../backend/models');
 
 // Load seed data
 const categoriesData = require('./categories.json');
@@ -10,6 +10,7 @@ const pagesData = require('./pages.json');
 const slidersData = require('./sliders.json');
 const ordersData = require('./orders.json');
 const newslettersData = require('./newsletters.json');
+const contactData = require('./contact.json');
 
 const seedDatabase = async () => {
   try {
@@ -24,11 +25,10 @@ const seedDatabase = async () => {
 
     const createdUsers = [];
     for (const user of usersData) {
-      const hashedPassword = await bcrypt.hash(user.password, 10);
       const newUser = await User.create({
         name: user.name,
         email: user.email,
-        password: hashedPassword,
+        password: user.password,
         role: user.role,
       });
       createdUsers.push(newUser);
@@ -43,6 +43,9 @@ const seedDatabase = async () => {
     
     await Newsletter.bulkCreate(newslettersData, { ignoreDuplicates: true });
     console.log('Newsletters seeded.');
+
+    await ContactMessage.bulkCreate(contactData);
+    console.log('Contact messages seeded.');
 
     const productMap = {};
     createdProducts.forEach(p => { productMap[p.name] = p.id; });
