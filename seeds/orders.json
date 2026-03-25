@@ -5,7 +5,7 @@
     "shippingAddress": "123 Sport Street, London, UK",
     "paymentMethod": "PayPal",
     "items": [
-      { "productName": "Nike Air Max 2024", "quantity": 1 },
+      { "productName": "Nike Air Max Dn", "quantity": 1 },
       { "productName": "Under Armour Tech 2.0 Tee", "quantity": 2 }
     ]
   },
@@ -15,8 +15,48 @@
     "shippingAddress": "456 Fitness Ave, Manchester, UK",
     "paymentMethod": "Credit Card",
     "items": [
-      { "productName": "Adidas Predator Elite FG", "quantity": 1 },
-      { "productName": "Wilson Evolution Basketball", "quantity": 1 }
+      { "productName": "Predator League Fold-Over Tongue Firm/Multi-Ground Boots", "quantity": 1 },
+      { "productName": "Jordan Ultimate 2.0 8P", "quantity": 1 }
+    ]
+  },
+  {
+    "userEmail": "user@example.com",
+    "status": "pending",
+    "shippingAddress": "789 Runner's Lane, Edinburgh, UK",
+    "paymentMethod": "PayPal",
+    "items": [
+      { "productName": "Velocity NITRO™ 4 Running Shoes", "quantity": 1 },
+      { "productName": "Lift Seamless Leggings", "quantity": 1 }
+    ]
+  },
+  {
+    "userEmail": "user@example.com",
+    "status": "delivered",
+    "shippingAddress": "321 Hoops Blvd, Birmingham, UK",
+    "paymentMethod": "Credit Card",
+    "items": [
+      { "productName": "Advanced Grip Control Composite Indoor/Outdoor Basketball", "quantity": 1 },
+      { "productName": "Nike Dri-FIT Academy", "quantity": 3 }
+    ]
+  },
+  {
+    "userEmail": "admin@example.com",
+    "status": "delivered",
+    "shippingAddress": "Admin HQ, 1 Main Street, London, UK",
+    "paymentMethod": "Bank Transfer",
+    "items": [
+      { "productName": "Nike Air Max Dn", "quantity": 2 },
+      { "productName": "Predator League Fold-Over Tongue Firm/Multi-Ground Boots", "quantity": 1 }
+    ]
+  },
+  {
+    "userEmail": "admin@example.com",
+    "status": "shipped",
+    "shippingAddress": "Admin Warehouse, 22 Commerce Way, Bristol, UK",
+    "paymentMethod": "Credit Card",
+    "items": [
+      { "productName": "Jordan Ultimate 2.0 8P", "quantity": 1 },
+      { "productName": "Lift Seamless Leggings", "quantity": 2 }
     ]
   }
 ]
