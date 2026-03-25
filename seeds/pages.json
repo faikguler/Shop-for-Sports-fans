@@ -1,7 +1,7 @@
 [
   {
     "name": "About",
-    "description": "<h2>Our Project: Shop for Sports Fans</h2><p>We are developing a modern e-commerce platform tailored for sports enthusiasts. Our goal is to provide a seamless shopping experience for jerseys, equipment, and accessories across multiple sports.</p><p>The platform features a React-based customer interface, a Node.js/Express backend, and an admin panel (Vue.js) to manage products, orders, and users. We aim to combine performance, usability, and style.</p><p>As <strong>Coders of the Apocalypse</strong>, we embrace challenges and deliver high-quality code. This project showcases our skills in full-stack development and teamwork.</p>",
+    "description": "<h2>Our Project: Shop for Sports Fans</h2><p>We are developing a modern e-commerce platform tailored for sports enthusiasts. Our goal is to provide a seamless shopping experience for jerseys, equipment, and accessories across multiple sports.</p><p>The platform features a React-based customer interface, a Node.js/Express backend, and an admin panel (Vite) to manage products, orders, and users. We aim to combine performance, usability, and style.</p><p>As <strong>Coders of the Apocalypse</strong>, we embrace challenges and deliver high-quality code. This project showcases our skills in full-stack development and teamwork.</p>",
     "location": "header"
   },
   {
