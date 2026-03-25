@@ -1,0 +1,22 @@
+[
+  {
+    "userEmail": "user@example.com",
+    "status": "delivered",
+    "shippingAddress": "123 Sport Street, London, UK",
+    "paymentMethod": "PayPal",
+    "items": [
+      { "productName": "Nike Air Max 2024", "quantity": 1 },
+      { "productName": "Under Armour Tech 2.0 Tee", "quantity": 2 }
+    ]
+  },
+  {
+    "userEmail": "user@example.com",
+    "status": "shipped",
+    "shippingAddress": "456 Fitness Ave, Manchester, UK",
+    "paymentMethod": "Credit Card",
+    "items": [
+      { "productName": "Adidas Predator Elite FG", "quantity": 1 },
+      { "productName": "Wilson Evolution Basketball", "quantity": 1 }
+    ]
+  }
+]

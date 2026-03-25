@@ -67,7 +67,40 @@ const AdminSidebar = ({ setUser }) => {
             Page Editor
           </NavLink>
         </li> 
+         <li style={{ marginBottom: '10px' }}>
+          <NavLink
+            to="/admin/slider"
+            className={({ isActive }) => 
+              `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+            }
+          >
+            Slider Editor
+          </NavLink>
+        </li> 
         
+        <li style={{ marginBottom: '10px' }}>
+          <NavLink
+            to="/admin/newsletters"
+            className={({ isActive }) =>
+              `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+            }
+          >
+            Newsletters
+          </NavLink>
+        </li>
+
+          <li style={{ marginBottom: '10px' }}>
+            <NavLink
+              to="/admin/contact-messages"
+              className={({ isActive }) =>
+                `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+              }
+            >
+              Contact Messages
+            </NavLink>
+          </li>
+
+
         <li style={{ marginBottom: '10px' }}>
           <NavLink
             to="/admin/products"
@@ -88,6 +121,19 @@ const AdminSidebar = ({ setUser }) => {
             Orders
           </NavLink>
         </li>
+
+        <li style={{ marginBottom: '10px' }}>
+          <NavLink
+            to="/admin/reviews"
+            className={({ isActive }) =>
+              `text-white text-decoration-none d-block px-3 py-2 ${isActive ? 'bg-warning text-dark' : ''}`
+            }
+          >
+            Reviews
+          </NavLink>
+        </li>
+
+
         <li style={{ marginTop: '30px', padding: '0 20px' }}>
           <button 
             onClick={handleLogout}

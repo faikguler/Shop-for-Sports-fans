@@ -1,0 +1,6 @@
+[
+  { "name": "Football", "description": "All football gear" },
+  { "name": "Basketball", "description": "Basketball equipment" },
+  { "name": "Running", "description": "Running shoes and apparel" },
+  { "name": "Fitness", "description": "Gym and fitness accessories" }
+]

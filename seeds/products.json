@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Nike Air Max 2024",
+    "description": "Ultra-comfortable running shoes with responsive cushioning and breathable mesh upper. Ideal for daily runs and casual wear.",
+    "price": 149.99,
+    "stock": 45,
+    "brand": "Nike",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Nike+Air+Max+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Nike+Air+Max+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Nike+Air+Max+3",
+      "https://placehold.co/600x400/999999/FFFFFF?text=Nike+Air+Max+4"
+    ],
+    "categoryId": 3,
+    "averageRating": null
+  },
+  {
+    "name": "Adidas Predator Elite FG",
+    "description": "High-performance football boots with control frame and hybrid studs. Designed for precision and power on firm ground.",
+    "price": 229.99,
+    "stock": 30,
+    "brand": "Adidas",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Adidas+Predator+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Adidas+Predator+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Adidas+Predator+3",
+      "https://placehold.co/600x400/999999/FFFFFF?text=Adidas+Predator+4",
+      "https://placehold.co/600x400/CCCCCC/000000?text=Adidas+Predator+5"
+    ],
+    "categoryId": 1,
+    "averageRating": null
+  },
+  {
+    "name": "Wilson Evolution Basketball",
+    "description": "Official size basketball with premium composite leather and deep channels for exceptional grip and control.",
+    "price": 79.99,
+    "stock": 60,
+    "brand": "Wilson",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Wilson+Evo+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Wilson+Evo+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Wilson+Evo+3"
+    ],
+    "categoryId": 2,
+    "averageRating": null
+  },
+  {
+    "name": "Under Armour Tech 2.0 Tee",
+    "description": "Lightweight, moisture-wicking training t-shirt. Perfect for gym sessions or casual wear.",
+    "price": 29.99,
+    "stock": 120,
+    "brand": "Under Armour",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=UA+Tee+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=UA+Tee+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=UA+Tee+3",
+      "https://placehold.co/600x400/999999/FFFFFF?text=UA+Tee+4"
+    ],
+    "categoryId": 4,
+    "averageRating": null
+  },
+  {
+    "name": "Puma Velocity Nitro 3",
+    "description": "Energy-returning running shoes with nitrogen-infused foam. Responsive and durable for long distances.",
+    "price": 139.99,
+    "stock": 35,
+    "brand": "Puma",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Puma+Velocity+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Puma+Velocity+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Puma+Velocity+3"
+    ],
+    "categoryId": 3,
+    "averageRating": null
+  },
+  {
+    "name": "Nike Dri-FIT Academy",
+    "description": "Soccer training jersey with sweat-wicking technology. Lightweight and breathable.",
+    "price": 49.99,
+    "stock": 85,
+    "brand": "Nike",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Nike+Academy+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Nike+Academy+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Nike+Academy+3"
+    ],
+    "categoryId": 1,
+    "averageRating": null
+  },
+  {
+    "name": "Spalding NBA Official Game Ball",
+    "description": "Authentic NBA game ball, full-grain leather construction. Superior feel and durability.",
+    "price": 119.99,
+    "stock": 25,
+    "brand": "Spalding",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Spalding+NBA+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Spalding+NBA+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Spalding+NBA+3",
+      "https://placehold.co/600x400/999999/FFFFFF?text=Spalding+NBA+4"
+    ],
+    "categoryId": 2,
+    "averageRating": null
+  },
+  {
+    "name": "Gymshark Flex Leggings",
+    "description": "High-waisted training leggings with sculpting fabric. Squat-proof and moisture-wicking.",
+    "price": 54.99,
+    "stock": 70,
+    "brand": "Gymshark",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Gymshark+Leggings+1",
+      "https://placehold.co/600x400/333333/FFFFFF?text=Gymshark+Leggings+2",
+      "https://placehold.co/600x400/666666/FFFFFF?text=Gymshark+Leggings+3",
+      "https://placehold.co/600x400/999999/FFFFFF?text=Gymshark+Leggings+4",
+      "https://placehold.co/600x400/CCCCCC/000000?text=Gymshark+Leggings+5"
+    ],
+    "categoryId": 4,
+    "averageRating": null
+  }
+]

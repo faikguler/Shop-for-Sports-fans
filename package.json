@@ -10,7 +10,8 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\"",
     "build": "vite build && ls -la dist",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
