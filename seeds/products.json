@@ -1,45 +1,44 @@
 [
   {
-    "name": "Nike Air Max 2024",
+    "name": "Nike Air Max Dn",
     "description": "Ultra-comfortable running shoes with responsive cushioning and breathable mesh upper. Ideal for daily runs and casual wear.",
     "price": 149.99,
     "stock": 45,
     "brand": "Nike",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Nike+Air+Max+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Nike+Air+Max+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Nike+Air+Max+3",
-      "https://placehold.co/600x400/999999/FFFFFF?text=Nike+Air+Max+4"
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0083d873-114c-4a76-9dd3-82aa3c1b168f/AIR+MAX+DN.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/10633817-78a0-4ea5-8dbc-14b191aacb36/AIR+MAX+DN.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8391e624-8246-4a2e-972e-8c3884704051/AIR+MAX+DN.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0b5d695c-c62f-4e1b-9475-1b3e5201a9b5/AIR+MAX+DN.png"
     ],
     "categoryId": 3,
     "averageRating": null
   },
   {
-    "name": "Adidas Predator Elite FG",
+    "name": "Predator League Fold-Over Tongue Firm/Multi-Ground Boots",
     "description": "High-performance football boots with control frame and hybrid studs. Designed for precision and power on firm ground.",
     "price": 229.99,
     "stock": 30,
-    "brand": "Adidas",
+    "brand": "Nike",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Adidas+Predator+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Adidas+Predator+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Adidas+Predator+3",
-      "https://placehold.co/600x400/999999/FFFFFF?text=Adidas+Predator+4",
-      "https://placehold.co/600x400/CCCCCC/000000?text=Adidas+Predator+5"
+      "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_669,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d77fb292-34be-4848-897c-f03c3109e2de/TIEMPO+MAESTRO+ELITE+FG+SE.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/699c0244-1ce1-4b04-9e72-6efc4283084b/TIEMPO+MAESTRO+ELITE+FG+SE.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/87eb2a63-2097-4463-824d-00121695247d/TIEMPO+MAESTRO+ELITE+FG+SE.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a8e0bf78-5096-4cf3-ba83-bb0a661679ba/TIEMPO+MAESTRO+ELITE+FG+SE.png"
     ],
     "categoryId": 1,
     "averageRating": null
   },
   {
-    "name": "Wilson Evolution Basketball",
+    "name": "Jordan Ultimate 2.0 8P",
     "description": "Official size basketball with premium composite leather and deep channels for exceptional grip and control.",
     "price": 79.99,
     "stock": 60,
-    "brand": "Wilson",
+    "brand": "Jordan",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Wilson+Evo+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Wilson+Evo+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Wilson+Evo+3"
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/442439cc-9a26-4b6d-b4e0-af9bf66889de/JDN+ULTIMATE+2.0+8P+DEFLATED.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4ae4d73a-1ce9-437c-b45c-17d1d2571a1d/JDN+ULTIMATE+2.0+8P+DEFLATED.png"
+      
     ],
     "categoryId": 2,
     "averageRating": null
@@ -51,24 +50,25 @@
     "stock": 120,
     "brand": "Under Armour",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=UA+Tee+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=UA+Tee+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=UA+Tee+3",
-      "https://placehold.co/600x400/999999/FFFFFF?text=UA+Tee+4"
+      "https://underarmour.scene7.com/is/image/Underarmour/V5-1326413-100_FC?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708",
+      "https://underarmour.scene7.com/is/image/Underarmour/V5-1326413-100_BC?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708",
+      "https://underarmour.scene7.com/is/image/Underarmour/V5-1326413-455_FC?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708",
+      "https://underarmour.scene7.com/is/image/Underarmour/V5-1326413-455_BC?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708"
     ],
     "categoryId": 4,
     "averageRating": null
   },
   {
-    "name": "Puma Velocity Nitro 3",
+    "name": "Velocity NITRO™ 4 Running Shoes",
     "description": "Energy-returning running shoes with nitrogen-infused foam. Responsive and durable for long distances.",
     "price": 139.99,
     "stock": 35,
     "brand": "Puma",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Puma+Velocity+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Puma+Velocity+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Puma+Velocity+3"
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/05/sv01/fnd/GBR/fmt/png/Velocity-NITRO%E2%84%A2-4-Running-Shoes-Men",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/05/sv04/fnd/GBR/fmt/png/Velocity-NITRO%E2%84%A2-4-Running-Shoes-Men",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/05/sv02/fnd/GBR/fmt/png/Velocity-NITRO%E2%84%A2-4-Running-Shoes-Men",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/05/bv/fnd/GBR/fmt/png/Velocity-NITRO%E2%84%A2-4-Running-Shoes-Men"
     ],
     "categoryId": 3,
     "averageRating": null
@@ -80,40 +80,37 @@
     "stock": 85,
     "brand": "Nike",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Nike+Academy+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Nike+Academy+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Nike+Academy+3"
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/dca25f27-4264-471f-87b8-4e55ed7e4e86/M+NK+DF+FAST+3IN+BF+SHRT+ENRGY.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/41cfb322-8fd7-4e9e-b447-bc58e9f1ad3b/M+NK+DF+FAST+3IN+BF+SHRT+ENRGY.png",
+      "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/e1c248a2-54b0-4990-984e-c2d8805dbb6f/M+NK+DF+FAST+3IN+BF+SHRT+ENRGY.png"
     ],
     "categoryId": 1,
     "averageRating": null
   },
   {
-    "name": "Spalding NBA Official Game Ball",
+    "name": "Advanced Grip Control Composite Indoor/Outdoor Basketball",
     "description": "Authentic NBA game ball, full-grain leather construction. Superior feel and durability.",
     "price": 119.99,
     "stock": 25,
     "brand": "Spalding",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Spalding+NBA+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Spalding+NBA+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Spalding+NBA+3",
-      "https://placehold.co/600x400/999999/FFFFFF?text=Spalding+NBA+4"
+      "https://spalding-basketball.com/cdn/shop/products/spalding-advanced-grip-control-composite-indooroutdoor-basketball-777726_720x.jpg?v=1754024374",
+      "https://spalding-basketball.com/cdn/shop/products/spalding-advanced-grip-control-composite-indooroutdoor-basketball-590895_720x.jpg?v=1754024375"
     ],
     "categoryId": 2,
     "averageRating": null
   },
   {
-    "name": "Gymshark Flex Leggings",
+    "name": "Lift Seamless Leggings",
     "description": "High-waisted training leggings with sculpting fabric. Squat-proof and moisture-wicking.",
     "price": 54.99,
     "stock": 70,
     "brand": "Gymshark",
     "images": [
-      "https://placehold.co/600x400/000000/FFFFFF?text=Gymshark+Leggings+1",
-      "https://placehold.co/600x400/333333/FFFFFF?text=Gymshark+Leggings+2",
-      "https://placehold.co/600x400/666666/FFFFFF?text=Gymshark+Leggings+3",
-      "https://placehold.co/600x400/999999/FFFFFF?text=Gymshark+Leggings+4",
-      "https://placehold.co/600x400/CCCCCC/000000?text=Gymshark+Leggings+5"
+      "https://cdn.shopify.com/s/files/1/0098/8822/files/images-LiftSeamlessLeggingsGSCoolBrownB6A9C_NBZG_0175_V3_1920x.jpg?v=1769694459",
+      "https://cdn.shopify.com/s/files/1/0098/8822/files/images-LiftSeamlessLeggingsGSCoolBrownB6A9C_NBZG_0182_V3_1920x.jpg?v=1769694459",
+      "https://cdn.shopify.com/s/files/1/0098/8822/files/images-LiftSeamlessLeggingsGSWornBlueGSPeriBlueMarlB6A9C_UDSS_0951_1920x.jpg?v=1752835789",
+      "https://cdn.shopify.com/s/files/1/0098/8822/files/images-LiftSeamlessLeggingsGSWornBlueGSPeriBlueMarlB6A9C_UDSS_0966_1920x.jpg?v=1752835789"
     ],
     "categoryId": 4,
     "averageRating": null
