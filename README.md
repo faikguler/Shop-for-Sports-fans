@@ -91,7 +91,7 @@ All authentication is handled with JWT, and the cart persists in localStorage. T
     JWT_SECRET=your_jwt_secret
     VITE_TINYMCE_API_KEY=your_tinymce_api_key
     DB_PORT=db_port_number 
-    DB_DIALECT=mysql_or_postgre
+    DB_DIALECT=mysql_or_postgres
 
 4. **Create the database**
     If using PostgreSQL or Mysql locally, create a database named sportshop.
