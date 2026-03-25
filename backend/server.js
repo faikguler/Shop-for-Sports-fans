@@ -26,34 +26,6 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 //  res.send('SportShop API working...');
 //});
 
-// Models
-const User = require('./models/User');
-
-sequelize.authenticate()
-  .then(async () => {
-    console.log('MySQL connected successfully.');
-    try {
-      const adminCount = await User.count({ where: { role: 'admin' } });
-      if (adminCount === 0) {
-        const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
-        const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
-        const adminName = process.env.ADMIN_NAME || 'Admin';
-        await User.create({
-          name: adminName,
-          email: adminEmail,
-          password: adminPassword,
-          role: 'admin',
-        });
-        console.log(`Admin user created: ${adminEmail} (password: ${adminPassword})`);
-      } else {
-        console.log('Admin user already exists');
-      }
-    } catch (err) {
-      console.error('Admin creation error:', err);
-    }
-  })
-  .catch(err => console.error('Unable to connect to MySQL:', err));
-
 // Routes
 const userRoutes = require('./routes/user'); // user.js 
 app.use('/api/users', userRoutes);
