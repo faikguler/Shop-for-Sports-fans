@@ -130,5 +130,3 @@ All authentication is handled with JWT, and the cart persists in localStorage. T
 - Faik
 - Abdul
 - Blaize
-
- Built with ❤️ for the final project.
