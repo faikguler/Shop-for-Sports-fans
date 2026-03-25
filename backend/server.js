@@ -76,8 +76,11 @@ app.use('/api/newsletter', newsletterRoutes);
 const orderRoutes = require('./routes/order');
 app.use('/api/orders', orderRoutes);
 
+const sliderRoutes = require('./routes/slider');
+app.use('/api/sliders', sliderRoutes);
+
 const frontendPath = path.join(__dirname, '../dist');
-console.log('Serving static from:', frontendPath);  // Log ekle
+console.log('Serving static from:', frontendPath); 
 app.use(express.static(frontendPath));
 app.get('*', (req, res) => {
   res.sendFile(path.join(frontendPath, 'index.html'));
