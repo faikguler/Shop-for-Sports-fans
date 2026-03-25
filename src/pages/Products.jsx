@@ -105,7 +105,6 @@ const Product = () => {
                         alt={product.name}
                         style={{ objectFit: 'cover', height: '200px' }}
                       />
-                      <h5 className="card-title">{product.name}</h5>
                     </Link>
                     <div className="card-body">
                       <h5 className="card-title">{product.name}</h5>
